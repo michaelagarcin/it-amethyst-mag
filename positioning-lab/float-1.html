@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Positioning Lab</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #ECECEC;
+	font-weight: bold;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #FFF;
+	text-align: center;
+	line-height: 24px;
+}
+#wrapper {
+	background-color: #FFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+	/** dimmensions for the boxes
+	
+	width: 370px;
+	height: 150px;
+	margin: 10px;
+	float: left;
+	
+	**/
+div:nth-child(-n+4) {
+	width: 370px;
+	height: 150px;
+	margin: 10px;
+	float: left;
+}
+	/** Don't forget that Thomas wants us to use things like nth-child to make the code optimized. **/
+#red {
+	background-color: #900;
+	
+}
+#green {
+	background-color: #090;
+}
+#blue {
+	background-color: #00F;
+}
+#purple {
+	background-color: #63C;
+}
+#footer {
+	background-color: #666;
+	clear: both;
+	margin: 10px;
+}
+h1 {
+	color: #000;
+	font-weight: normal;
+	padding: 50px;
+}
+</style>
+</head>
+
+<body>
+<h1>Float 1</h1>
+<div id="wrapper">
+  <div id="red">Red</div>
+  <div id="green">Green</div>
+  <div id="blue">Blue</div>
+  <div id="purple">Purple</div>
+  <div id="footer">Footer</div>
+</div>
+</body>
+</html>
