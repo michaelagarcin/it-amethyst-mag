@@ -1,6 +1,110 @@
-body {
-    background-color: #CACFD2;
+/* -------------------- Color Palette -------------------- */
+/*
+                    #192D5E - navy blue
+                    #31487F - lighter navy blue
+                    #BABCC8 - lightish gray
+                    #E6DDD9 - beige
+                    #6D7285 - purpleish
+*/
+/* -------------------- Box Sizing ----------------------- */
+
+html {
+  box-sizing: border-box;
 }
-h1 {
-    color: blue;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* -------------------- Utility Styles ------------------- */
+
+.container{
+  width:80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.img-right{
+  float:right;
+  border:5px solid #31487F;
+  padding:10px;
+  margin: 10px 0 10px 30px;
+  background-color: #babcc8;
+}
+
+.img-left{
+  float:left;
+  border:5px solid #31487f;
+  padding:10px;
+  margin: 10px 30px 10px 0;
+  background-color: #babcc8;
+}
+
+.img-center{
+  display:block;
+  border:5px solid #31487f;
+  padding:10px;
+  margin: 20px auto;
+  background-color: #babcc8;
+}
+
+/* ------------------ Responsive Images ------------------ */
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* -------------------- Global Styles -------------------- */
+body{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.5;
+    margin:0;
+    background-color: #e6ddd9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%236d7285' fill-opacity='0.08'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+header.primary{
+    background-color:#192D5E;
+    text-align:center;
+    color:#E6DDD9;
+    text-shadow: 1px 1px #000000;
+    padding:40px 40px 20px 40px;
+}
+header.primary h1 {
+    font-size:3.2rem;
+    margin: 20px 0;
+}
+header.primary h1 a{
+    color:#E6DDD9;
+    text-decoration:none;
+}
+header.primary h2{
+    font-size:2rem;
+}
+nav{
+    width:80vw;
+    margin: 20px auto;
+}
+nav ul{
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+nav ul li{
+    list-style-type:none;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color:#E6DDD9;
+    text-decoration:none;
+    background-color:#6D7285;
+    background-color: rgba(109,114,133,.75);
+    padding:8px 16px;
+    border-radius:35px 15px;
+    transition:0.8s;
+}
+nav ul li a:hover, nav ul li a:active{
+    background-color:#6D7285;
+    background-color: rgba(109,114,133,1);
 }
