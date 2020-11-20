@@ -48,11 +48,6 @@ html {
   background-color: #babcc8;
 }
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
 /* ------------------ Responsive Images ------------------ */
 
 img{
