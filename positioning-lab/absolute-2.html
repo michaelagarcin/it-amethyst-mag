@@ -29,6 +29,25 @@ body {
 	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	position: relative;
+	height: 800px;
+}
+#red, #green, #blue, #purple, #footer {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+div:nth-child(-n+2) {
+	top: 0;
+}
+#blue, #purple {
+	bottom: 0;
+}
+#red, #blue {
+	left: 0;
+}
+#green, #purple {
+	right:0;
 }
 #red {
 	background-color: #900;
@@ -44,6 +63,8 @@ body {
 }
 #footer {
 	background-color: #666;
+	top: 300px;
+	left: 300px;
 }
 h1 {
 	color: #000;

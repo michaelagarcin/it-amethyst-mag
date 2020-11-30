@@ -30,6 +30,25 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+#red, #green, #blue, #purple, #footer {
+	width: 200px;
+	height: 200px;
+}
+#red, #green, #blue, #purple {
+	position: absolute;
+}
+div:nth-child(-n+2) {
+	top: 0;
+}
+#blue, #purple {
+	bottom: 0;
+}
+#red, #blue {
+	left: 0;
+}
+#green, #purple {
+	right:0;
+}
 #red {
 	background-color: #900;
 }
@@ -44,6 +63,9 @@ body {
 }
 #footer {
 	background-color: #666;
+	position: relative;
+	left: 300px;
+	margin: 10px 0px;
 }
 h1 {
 	color: #000;
