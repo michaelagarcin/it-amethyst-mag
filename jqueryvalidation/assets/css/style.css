@@ -1,0 +1,17 @@
+.formlabel {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	padding: 5px;
+	font-weight: bold;
+}
+.border {
+    border-bottom: 1px solid black;
+}
+input + p {
+	display: inline;
+}
+.error {
+  color: red;
+  padding-left: 5px;
+  }
