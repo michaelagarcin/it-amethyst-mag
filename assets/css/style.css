@@ -85,6 +85,10 @@ header.primary h1 a{
 header.primary h2{
     font-size:2rem;
 }
+h3{
+  text-align: center;
+  padding: 12px 0px;
+}
 nav{
     width:80vw;
     margin: 20px auto;
