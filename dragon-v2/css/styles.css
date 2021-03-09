@@ -6,7 +6,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	background-image: url("../images/space.svg");
+	background-color: #101010;
 	font-size: 10px;
 	color: #ececec;
 }
@@ -75,6 +75,7 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 }
 /* Text Elements */
 p {
+	font-family: sans-serif;
 	color: #ececec;
 	font-size: 12px;
 	line-height: 150%;
@@ -143,9 +144,15 @@ th {
 	font-weight: bold;
 }
 thead, th {
-	background: #ccc;
+	font-size: 20px;
+	border-bottom: 1px solid white;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
-tbody {	}
+tbody {	
+	font-size: 15px;
+	font-family: sans-serif;
+}
 th, td, caption {	}
 caption {	}
 tfoot {	}
