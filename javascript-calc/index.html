@@ -1,0 +1,58 @@
+<html lang="en" xml:lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Calculator">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Michael Garcin">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+</head>
+<body>
+<form id="myform" novalidate="novalidate">
+    <div class="formcontainer" onsubmit="return false">
+        <h1>Javascript Calculator</h1>
+        <fieldset id="detail">
+            <legend>Min Max Avg</legend>  
+            <br>
+            
+            <label class="formlabel" for="Operand1">Operand 1: </label>
+            <input type="text" id="Operand1" name="Operand1" size="15" maxlength="15" data-rule-required="true" data-msg-required="Operand 1 is Required" data-rule-number="true" data-msg-number="Operand 1 must be a Number">
+            <label class="error" for="Operand1" id="Operand1Error"></label>
+            <br><br>
+
+            <label class="formlabel">Operator: </label>
+            <label for="PlusOperator">
+            <input type="radio" name="Operator" id="PlusOperator" value="Plus" data-rule-required="true" data-msg-required="Operator is Required">+
+            </label>
+            <label for="MinusOperator">
+            <input type="radio" name="Operator" id="MinusOperator" value="Minus">-
+            </label>
+            <label for="TimesOperator">
+            <input type="radio" name="Operator" id="TimesOperator" value="Times">*
+            </label>
+            <label for="DivideOperator">
+            <input type="radio" name="Operator" id="DivideOperator" value="Divide">/
+            </label>
+            <label for="Operator" class="error" id="OperatorError"></label>
+            <br><br>
+
+            <label class="formlabel" for="Operand2">Operand 2: </label>
+            <input type="text" id="Operand2" name="Operand2" size="15" maxlength="15" data-rule-required="true" data-msg-required="Operand 2 is Required" data-rule-number="true" data-msg-number="Operand 2 must be a Number">
+            <label class="error" for="Operand2" id="Operand2Error"></label>
+            <br><br>
+
+            <label class="formlabel">Result: </label>
+            <span id="Result"></span>
+            <br><br>
+
+            <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+            <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate="">
+
+        </fieldset>
+    </div>
+</form>
+<script src="calc.js"></script>
+
+</body></html>
