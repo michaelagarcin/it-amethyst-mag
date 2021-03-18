@@ -54,16 +54,15 @@ function calculate() {
 
 function clearform() {
     
-    /* Set all of the form values to blank or false */
+   /* Set all of the form values to blank or false */
     document.getElementById("Operand1").value = "";
     document.getElementById("Operand2").value = "";
-    document.getElementById("Operand3").value = "";
     document.getElementById("Operand1Error").innerHTML = "";
     document.getElementById("Operand2Error").innerHTML = "";
-    document.getElementById("Operand3Error").innerHTML = "";
-    document.getElementById("MinOperator").checked = false;
-    document.getElementById("MaxOperator").checked = false;
-    document.getElementById("AvgOperator").checked = false;
+    document.getElementById("PlusOperator").checked = false;
+    document.getElementById("MinusOperator").checked = false;
+    document.getElementById("TimesOperator").checked = false;
+    document.getElementById("DivideOperator").checked = false;
     document.getElementById("OperatorError").innerHTML = "";
     document.getElementById("Result").innerHTML = "";
 }
