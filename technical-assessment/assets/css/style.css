@@ -1,0 +1,45 @@
+html {
+	font-family: 'Orbitron', sans-serif;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-image: url("../images/space.svg");
+	font-size: 10px;
+	color: #ececec;
+}
+table{
+    text-align:center;
+    border:1px solid #ececec;
+}
+th{
+    margin:0% 2%;
+    border:1px solid #ececec;
+}
+td{
+    border:1px solid #ececec;
+    text-align:left;
+}
+img{
+    border:1px solid #ececec;
+}
+.img-container {
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+img[src="#"] {
+    display:none;
+}
+#RoverError {
+    color: red;
+}
+#PictureDateError {
+    color: red;
+}
